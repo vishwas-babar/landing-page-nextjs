@@ -21,8 +21,8 @@ export default function TopNav() {
     ]
 
     return (
-        <Box sx={{ bgcolor: "transparent", width: "100%", height: 70, display: "flex", justifyContent: "center", alignItems: "center" }} >
-            <AppBar elevation={0} position="static" sx={{ bgcolor: "transparent", width: "95%", display: "flex", alignItems: 'center', mt: 1, flexDirection: "row" }} >
+        <Box sx={{ bgcolor: "transparent", width: "100%", px: 10, height: 70, display: "flex", justifyContent: "space-between", alignItems: "center" }} >
+            <AppBar elevation={0} position="static" sx={{ bgcolor: "transparent", width: "95%", display: "flex", alignItems: 'center', justifyContent: "space-between", mt: 1, flexDirection: "row" }} >
                 <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 1 }} >
                     <Image src={brandLogo} alt="brand logo" width={50} height={50} />
                     <Typography variant="h6"
@@ -31,12 +31,26 @@ export default function TopNav() {
                     >Social</Typography>
                 </Box>
 
-                <div className='flex flex-row items-center gap-5' >
-                    <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
+                <div className='flex flex-row items-center gap-16' >
+                    <Box sx={{ display: 'flex', gap: 2, alignItems: 'center', justifyContent: 'center', }}>
                         {menuOptions.map((option, index) => (
                             <Box key={index} sx={{ display: "flex" }} >
                                 <Box position={'relative'} sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                    <Button href={option.path} sx={{ fontWeight: 530 }} color="primary">
+                                    <Button 
+                                    href={option.path} 
+                                    sx={{ fontWeight: 530,
+                                        fontSize: 16,
+                                        borderRadius: "20px",
+                                        textTransform: "capitalize",
+                                        color: "black",
+                                        bgcolor: "transparent",
+                                        transition: "all 0.3s ease-in-out",
+                                        '&:hover': {
+                                            bgcolor: "#2c73e6",
+                                            color: "white",
+                                            scale: "1.1",
+                                        }
+                                    }} color="primary">
                                         {option.name}
                                     </Button>
 
@@ -46,8 +60,15 @@ export default function TopNav() {
                         ))}
                     </Box>
 
-                    <div className='flex bg-red-800 p-9'>
-                        <Button color="primary" variant="contained" sx={{ ml: 2, fontWeight: 530 }} >Login</Button>
+                    <div className='flex gap-5 items-center'>
+                        <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: "500", color: "black" }}>Login</Typography>
+                        <Button variant="contained" sx={{ px: 2, py: 1, borderRadius: "20px"  }} color="primary">SEE DETAIL</Button>
+
+                        <div className='w-[2px] h-8 bg-gray-400'></div>
+
+                        <IconButton sx={{ color: "black" }} >
+                            <MenuIcon />
+                        </IconButton>
                     </div>
                 </div>
 
