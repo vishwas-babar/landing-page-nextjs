@@ -111,9 +111,9 @@ export default function Hero2() {
                 }}
                     variants={childVariant}
                 >
-                    <Typography variant="h5" sx={{ color: "black", fontWeight: "bold" }} ><BlueDot /> Vivamus sit amet interdum</Typography>
-                    <Typography variant="h6" sx={{ color: "black" }} >
-                        Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed. Vestibulum sit amet tortor sit amet libero lobortis.
+                    <Typography variant="h5" sx={{ color: "black", fontWeight: "bold" }} ><BlueDot /> Chat with your Friends</Typography>
+                    <Typography variant="h6" sx={{ color: "black" }}>
+                        Connect with your friends and family, share your favorite moments, and discover what's happening around the world. Join our community and start making meaningful connections today.
                     </Typography>
                 </Box>
             </Box>
@@ -141,9 +141,9 @@ export default function Hero2() {
                 }}
                     variants={childVariant}
                 >
-                    <Typography variant="h5" sx={{ color: "black", fontWeight: "bold" }} ><BlueDot /> Vivamus sit amet interdum</Typography>
-                    <Typography variant="h6" sx={{ color: "black" }} >
-                        Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed. Vestibulum sit amet tortor sit amet libero lobortis.
+                    <Typography variant="h5" sx={{ color: "black", fontWeight: "bold" }} ><BlueDot /> Connect Anywhere, Anytime</Typography>
+                    <Typography variant="h6" sx={{ color: "black" }}>
+                        With our high-quality video calling feature, you can stay in touch with your loved ones no matter where you are. Start a video call, share your moments, and create memories together.
                     </Typography>
                 </Box>
 
@@ -178,12 +178,12 @@ export default function Hero2() {
                     mx: 'auto'
 
                 }}>
-                    <Typography variant="h5" sx={{ color: "black", fontWeight: "bold", textAlign: "center" }} >Vivamus sit amet interdum</Typography>
+                    <Typography variant="h5" sx={{ color: "black", fontWeight: "bold", textAlign: "center" }} >Connect, Share, and Discover</Typography>
                     <BlueDot />
                 </Box>
 
-                <Typography variant="h6" sx={{ color: "black", textAlign: "center" }} >
-                    Vestibulum sit amet tortor sit amet libero lobortis semper at et odio.
+                <Typography variant="h6" sx={{ color: "black", textAlign: "center" }}>
+                    Join our social media platform to connect with people around the world, share your life moments, and discover content tailored to your interests. Start your journey with us today.
                 </Typography>
 
                 <div className='flex justify-center items-center gap-2 mx-auto'>
@@ -206,14 +206,14 @@ export default function Hero2() {
                 initial="hidden"
                 whileInView="visible"
             >
-                <Box 
-                sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    px: 4,
-                }}
+                <Box
+                    sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        px: 4,
+                    }}
                     variants={childVariant2}
                 >
                     <Typography color={'primary'} variant="h4" sx={{ fontWeight: "bold", textAlign: "center" }} >

@@ -49,12 +49,13 @@ export default function TopNav() {
                                             bgcolor: "#2c73e6",
                                             color: "white",
                                             scale: "1.1",
+                                            shadow: "0 0 10px 0px #2c73e6",
                                         }
                                     }} color="primary">
                                         {option.name}
                                     </Button>
 
-                                    <Box position={'absolute'} sx={{ bgcolor: "#2c73e6", mt: 6, height: 8, width: 8, borderRadius: "100%" }} />
+                                    {/* <Box position={'absolute'} sx={{ bgcolor: "#2c73e6", mt: 6, height: 8, width: 8, borderRadius: "100%" }} /> */}
                                 </Box>
                             </Box>
                         ))}
