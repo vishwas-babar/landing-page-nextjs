@@ -4,7 +4,6 @@ import workingman from '@/assets/workingman.jpg'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import BulletPoint from './BulletPoint'
-import { Apple } from '@mui/icons-material'
 
 
 export default function Hero4() {
@@ -65,7 +64,7 @@ export default function Hero4() {
                 whileInView="visible"
                 sx={{ mt: 15 }}
             >
-                <Typography variant="h4" sx={{ fontWeight: "bold", color: "#1976d2", textAlign: 'center' }} >Publish your own custom fields</Typography>
+                <Typography variant="h4" sx={{ fontWeight: "bold", color: "#1976d2", textAlign: 'center' }} >Customize Your Experience</Typography>
 
                 <Box sx={{
                     display: "flex",
@@ -75,7 +74,9 @@ export default function Hero4() {
 
                 }}
                 >
-                    <Typography variant="subtitle1" sx={{ color: "#1976d2", textAlign: 'center', mt: 2, textWrap: 'wrap' }} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
+                    <Typography variant="subtitle1" sx={{ color: "#1976d2", textAlign: 'center', mt: 2, textWrap: 'wrap' }} >
+                        Personalize your profile, choose what to share, and even decide how you interact with others. With Socialize, you're in control of your social media experience.
+                    </Typography>
                 </Box>
 
                 <Box sx={{
@@ -107,21 +108,20 @@ export default function Hero4() {
                     >
                         {/* #1976d2 */}
                         <Typography variant="subtitle1" sx={{ color: "black", width: '350px', textAlign: 'start', mt: 5, fontSize: '16px' }} >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Welcome to Socialize, the ultimate platform to connect with your friends, family, and the world. Share your moments, discover new interests, and stay updated with the latest trends. Join us and start your journey of meaningful connections today.
                         </Typography>
 
                         <Typography variant="h5" sx={{ color: "black", width: '350px', fontWeight: 'semiBold', textAlign: 'start', mt: 2 }} >
-                            Perfect for:
+                            Ideal for:
                         </Typography>
 
                         <Box
                             sx={{ display: "flex", flexDirection: "column", gap: 0, mt: 1 }}
                         >
-                            <BulletPoint point={"this is the bullet point"} />
-                            <BulletPoint point={"this is the bullet point"} />
-                            <BulletPoint point={"this is the bullet point"} />
-                            <BulletPoint point={"this is the bullet point"} />
-
+                            <BulletPoint point={"Connecting with friends and family"} />
+                            <BulletPoint point={"Sharing your life moments"} />
+                            <BulletPoint point={"Discovering new interests"} />
+                            <BulletPoint point={"Staying updated with the latest trends"} />
                         </Box>
                     </Box>
                 </Box>

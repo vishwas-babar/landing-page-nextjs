@@ -143,7 +143,7 @@ function Hero1() {
                         color: "black",
                         fontSize: "1rem"
                     }} variant="h5" color="black">Connect with friends...</Typography>
-                </Box>
+                </Box>                                                              
             </Box>
         </>
     )
